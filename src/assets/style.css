@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+    font-family: 'Inter', Arial, sans-serif;
+
+    color: #3b0b49;
+    background: #ffffff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+
+    --ccs-green: #3b0b49;
+    --ccs-dark: #3b0b49;
+    --ccs-gold: #3b0b49;
+    --ccs-orange: #ffb21b;
+    --ccs-light: #f7f7f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+
+    min-width: 320px;
+
+    background: #ffffff;
+
+    color: #173c3c;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+section {
+    scroll-margin-top: 85px;
+}
+
+::selection {
+    background: #f5a900;
+    color: #123b3c;
+}
+
+
+.footer {
+    background: #041f21;
+
+    color: #ffffff;
+
+    padding-top: 60px;
+}
+
+.footer-container {
+    width: min(1300px, 90%);
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.footer-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.footer-brand img {
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: contain;
+}
+
+.footer-brand h3 {
+    margin: 0 0 5px;
+
+    font-size: 18px;
+}
+
+.footer-brand p {
+    margin: 0;
+
+    color: #9aabab;
+
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 28px;
+
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #c6d0d0;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffb21b;
+}
+
+.footer-bottom {
+    width: min(1300px, 90%);
+
+    margin: 50px auto 0;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    color: #788989;
+
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .footer-container {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+}
+
+
+:focus-visible {
+    outline: 3px solid #ffb21b;
+
+    outline-offset: 3px;
+}
+
+
+@media (max-width: 500px) {
+    section {
+        scroll-margin-top: 75px;
+    }
+}
